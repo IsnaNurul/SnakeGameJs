@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <script src="java.js"></script>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="row mt-3 text-center">
+            <div class="col col-md-4">
+                Score <br>
+                <label id="nilai">0</label>
+            </div>
+            <div class="col col-md-4">
+                <div class="judul">
+                    <h1>Snake Game</h1>
+                </div>
+            </div>
+            <div class="col col-md-4">
+                Time <br>
+                <label id="waktu">0:00:00</label>
+            </div>
+            
+        </div>
+        <div style="width:1000px;height: 750px; background-color: cadetblue; margin: auto;" id="intruksi">
+            <div class="row">
+                <div class="col text-center text-white p-5"><h1>Game Intruction</h1></div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-5 text-white">
+                    <ul>
+                        <li>Input Nama Pemain</li>
+                        <li>Klik Play, untuk memulai permainan</li>
+                        <li>asdad</li>
+                        <li>sdf</li>
+                        <li>sdfds</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center mt-5">
+                <div class="col-5">
+                    <input type="text" id="player" class="form-control" placeholder="Name Player">
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center mt-3">
+                <div class="col-5 d-flex justify-content-center">
+                    <button class="btn btn-success" onclick="play();">PLAY GAME</button>
+                </div>
+            </div>
+        </div>
+        <canvas id="board" style="background-color: green; display: none; margin: auto;"></canvas>
+        <div class="d-md-flex justify-content-md-center mt-3 mb-3">
+            <button class="btn btn-warning" id="cancel">Cancel</button>&nbsp;&nbsp;&nbsp;
+            <button class="btn btn-primary"  id="rewind">Rewind</button>
+        </div>
+    </div>
+</body>
+</html>

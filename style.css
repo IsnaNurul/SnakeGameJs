@@ -1,0 +1,18 @@
+.judul{
+    font-size: 25px;
+}
+
+button[type=submit]{
+    background-color: #5d96d4;
+    border-radius: 15px;
+    padding: 18px, 20px;
+    cursor: pointer;
+}
+
+button[type=submit]:hover{
+    background-color: #0069d9;
+}
+
+.row{
+    font-size: 20px;
+}
